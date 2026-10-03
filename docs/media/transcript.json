@@ -1,0 +1,64 @@
+[
+  [
+    "01 / CONNECT",
+    [
+      "MCP session initialized successfully.",
+      "5 tools discovered:",
+      "archive_project",
+      "search_projects",
+      "get_project",
+      "update_project",
+      "prepare_remix"
+    ]
+  ],
+  [
+    "02 / ARCHIVE",
+    [
+      "archive_project -> success",
+      "Saved: Pantry Atlas",
+      "ID: b4171a46-b066-4bd9-b36e-472d26363a4c",
+      "Status: archived",
+      "",
+      "archive_project -> success",
+      "Saved: Tiny Habits",
+      "ID: 6e0e48a0-3384-4452-bd6b-f982fd444305",
+      "",
+      "Fictional projects. Real database writes."
+    ]
+  ],
+  [
+    "03 / REDISCOVER",
+    [
+      "search_projects(query=\"python\")",
+      "Found 2 projects:",
+      "",
+      "  Tiny Habits | Check-in form, Weekly progress summary",
+      "  Pantry Atlas | Ingredient search, Recipe card layout"
+    ]
+  ],
+  [
+    "04 / PREPARE A REMIX",
+    [
+      "prepare_remix -> evidence brief ready",
+      "Goal: Build a pantry check-in prototype",
+      "Time budget: 6 hours",
+      "",
+      "Source: Pantry Atlas\nID: b4171a46-b066-4bd9-b36e-472d26363a4c\nPieces: Ingredient search, Recipe card layout\n",
+      "Source: Tiny Habits\nID: 6e0e48a0-3384-4452-bd6b-f982fd444305\nPieces: Check-in form, Weekly progress summary\n",
+      "Python retrieves evidence. ChatGPT proposes the plan.",
+      "No generated proposal is claimed in this recording."
+    ]
+  ],
+  [
+    "05 / ANOTHER CHAPTER",
+    [
+      "get_project -> current revision retrieved",
+      "update_project -> success",
+      "Project: Pantry Atlas",
+      "Status: revived",
+      "Revision: 2",
+      "",
+      "The original record and creation date are preserved."
+    ]
+  ]
+]

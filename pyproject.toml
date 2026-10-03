@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "second-draft-mcp"
+version = "0.1.0"
+description = "Give unfinished projects another chapter with a personal MCP archive."
+requires-python = ">=3.11"
+dependencies = ["mcp[cli]>=1.12,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+media = ["Pillow>=10,<13"]
+
+[project.scripts]
+second-draft = "second_draft.server:main"
+second-draft-demo = "second_draft.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
