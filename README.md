@@ -72,7 +72,7 @@ Two implementations are included:
 | Implementation | Stack | Use it for |
 | --- | --- | --- |
 | Python MCP server | Python, official MCP SDK, SQLite | Local development and personal MCP clients |
-| Hosted adapter and gallery | TypeScript, React/Vinext, Cloudflare D1 | A private ChatGPT-connected workspace |
+| Hosted adapter and gallery | TypeScript, React/Vinext, Cloudflare D1 | A ChatGPT-connected workspace with per-user archives |
 
 The hosted adapter preserves the five-tool workflow while running on a Worker-compatible runtime. Local SQLite and hosted D1 are **separate archives**; automatic synchronization is not implemented.
 
@@ -110,15 +110,17 @@ No OpenAI API key is required: these tools retrieve and persist records without 
 
 ## Connect to ChatGPT
 
-### Hosted personal workspace
+### Hosted workspace
 
-The owner's private workspace is deployed at:
+Second Draft is available at:
 
 **[Open Second Draft](https://second-draft-liriel.lirielcastro26.chatgpt.site)**
 
-It is private and is not a public portfolio demo. The associated personal plugin is provisioned; account installation and connection must be completed in ChatGPT before use. Open **Plugins → Personal → Created by you**, select **Second Draft**, and install/connect it if required.
+The site is public. Sign in with your own ChatGPT account to use your personal archive; project records remain scoped to the authenticated user. The owner's personal plugin is provisioned, but Second Draft has **not been submitted to or approved for the public plugin directory**. Directory publication requires verified developer identity, completed review materials, submission, and OpenAI approval.
 
-The hosted tools use the authenticated Site user ID and scope every data query to that user. OAuth and the private access boundary are handled by the hosting platform.
+To test the MCP integration in developer mode, use `https://second-draft-liriel.lirielcastro26.chatgpt.site/mcp` and complete the authentication flow offered by ChatGPT. Developer mode availability depends on the account and workspace. A public site URL does not imply a public directory listing.
+
+The hosted tools use the authenticated Site user ID and scope every data query to that user. OAuth and authenticated identity forwarding are handled by the hosting platform.
 
 ### Your own deployment
 
